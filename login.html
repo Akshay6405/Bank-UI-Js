@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourBank Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="images/shape-30.png" />
+</head>
+<body>
+    <div class="backbutton">
+    <a href="index.html"><button class="btn"> Go Back
+    </button></a>
+    </div>
+    <div class="logincontent">
+        <div class="loginmenu">
+
+             <!-- popup 2 -->
+            <div class="popup3" id="popup3">
+            <h2>Oops!</h2>
+            <p>Invalid credentials!, check email ID and password.  </p>
+            <button onclick="closepopup3()">OK</button>
+            </div>
+            <!-- popup 2 ends here -->
+
+            <div class="loginheader">
+                <div class="loghead"><span id="header">Login</span></div>
+                <div class="desc"><span id="description">Welcome back! Please log in to access your account.</span></div>
+            </div>
+            <div class="userinput">
+                <input class="userinputconfig" id="email" type="email" placeholder="Enter your Email"  >
+                <input class="userinputconfig" id="pass" type="password" placeholder="Enter your Password">
+            </div>
+            <div class="forgotpass">
+                <a href="" id="fpass">Forgot Password?</a>
+            </div>
+            <div class="herocontent">
+                <div>
+                    <button type="submit" class="button2" onclick="userlogin()">Login</button>
+               </div>
+                <div>
+                    <a href="signup.html"><button class="button">
+                        <span class="button-content">Sign Up </span>
+                      </button></a>
+                </div>
+                <div class="continue">
+                    <div class="msg">Or Continue with</div>
+                    <div class="socials">
+                        <div class="google"><button class="btnconfig"><img src="icons/googleicon.svg"></button></div>
+                        <div class="facebook"><button class="btnconfig"><img  src="icons/facebookicon.svg"></button></div>
+                        <div class="apple"><button class="btnconfig"><img  src="icons/appleicon.svg"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footercontainer1">
+            <div class="footerlogo"><img id="footerlogoin" src="images/footerlogo.svg"></div>
+            <div class="footernav"> 
+                <a href="index.html">Home</a>
+                <a href="">Careers</a>
+                <a href="">About</a>
+                <a href="">Security</a>
+            </div>
+        </div>
+        <div class="footercontainer2">
+            <a href="mailto:hello@skillbridge.com"><button id="btnconfig"><img src="icons/maillicon.svg">hello@skillbridge.com</button></a>
+            <a href="tel:+91 7034 78 6969"><button id="btnconfig"><img src="icons/phoneicon.svg"> +91 7034 78 6969</button></a>
+            <a href="https://www.google.com/maps/place/Amsterdam,+Netherlands/@52.3542071,4.5743283,10z/data=!3m1!4b1!4m6!3m5!1s0x47c63fb5949a7755:0x6600fd4cb7c0af8d!8m2!3d52.3675734!4d4.9041389!16zL20vMGszcA?entry=ttu" target="_blank"><button id="btnconfig"><img src="icons/mapicon.svg">Somewhere in the World</button></a>
+        </div>
+        <div class="footercontainer3">
+            <div class="socialicons">
+                <button><img src="icons/footerfbicon.svg"></button>
+                <button><img src="icons/footertwticon.svg"></button>
+                <button><img src="icons/footerldnicon.svg"></button>
+            </div>
+            <div class="rights">
+                YourBanK all Rights Reserved
+             </div>
+             <div class="policy">
+                <div class="privacy">Privacy Policy</div>
+                <div class="terms">Terms of Service</div>
+             </div>
+        </div>
+    </section>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>

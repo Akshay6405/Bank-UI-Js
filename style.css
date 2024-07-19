@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+    font-family: 'lexend';
+    
+}
+
+
+.homepage1 {
+    background-image: url(images/topleftdesign.svg);
+    background-repeat: no-repeat;
+    height: 130vh;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    align-items: center;
+
+}
+
+
+/* Navigation bar styling starts here */
+
+.navbar {
+
+    display: flex;
+    background-color: rgb(28, 28, 28);
+    justify-content: space-between;
+    align-items: center;
+    height: 4.3rem;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    width: 78rem;
+    border-radius: 2rem;
+
+}
+
+
+.topimage {
+    background-color: rgb(28, 28, 28);
+}
+
+
+
+.config1 {
+    background-color: rgb(28, 28, 28);
+
+}
+
+
+.loginbtn {
+    border: none;
+    background-color: rgb(202, 255, 51);
+    width: 5.75rem;
+    height: 2.5rem;
+    border-radius: 5.125rem;
+}
+
+.loginbtn:active,
+.loginbtn:focus,
+.loginbtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem rgb(96, 129, 3);
+    
+    transition: all 0.6s ease 0s;
+}
+
+#txtedit1 {
+    background-color: rgb(28, 28, 28);
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+
+#config2:hover,
+#config2:active,
+#config2:focus {
+    background-color: #262626;
+    transition: all 0.5s ease 0s;
+    color: rgb(202, 255, 51);
+
+}
+
+
+#txtedit1:hover,
+#txtedit1:active,
+#txtedit1:focus {
+    color: rgb(202, 255, 51);
+    transition: all 0.5 ease 0s;
+
+}
+
+
+.logsign {
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+.homepage1 {
+    width: 100%;
+}
+
+
+
+
+.nav {
+    text-decoration: none;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+}
+
+
+
+.txtedit {
+    text-decoration: none;
+    background-color: rgb(28, 28, 28);
+    color: aliceblue;
+    width: 3.8rem;
+    text-align: center;
+    align-content: center;
+    height: 1.8rem;
+    border-radius: 1.2rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+
+}
+
+/* Navigation bar styling ends here */
+
+
+
+.herocontent {
+    display: flex;
+    width: auto;
+    height: 68vh;
+    gap: 2.8rem;
+}
+
+.contentleft{
+    width: auto;
+}
+.left_content{
+    width: 30rem;
+}
+.left_content p{
+    color: #E4E4E7;
+}
+.left_content h1{
+    color: white;
+}
+.contentright {
+    width: auto;
+    
+
+}
+.contentright img{
+    content: contain;
+}
+
+.homepage1 {
+
+    justify-content: space-between;
+}
+
+.getstarted{
+    padding-top: 2rem;
+}
+
+#started{
+    border: none;
+    color: black;
+    background-color: rgb(202, 255, 51);
+    height: 4rem;
+    width: 10rem;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+   
+}
+
+#started:hover , #started:active , #started:focus {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0  0.5rem rgb(202, 255, 51);
+    transition: all 0.6s ease 0s;
+}
+
+.services{
+    width: 79rem;
+    height: 13rem;
+
+    
+}
+
+.heronav{
+    display: flex;
+    height: 27vh;
+    justify-content: center;
+}
+
+.logocontainer{
+    height: 10rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#heronavtxt{
+    color: #FFFFFF;
+}
+
+#line1{
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-color: #262626;
+}
+
+
+
+.logocontainer:hover{
+    box-shadow: 0 4px 2px -2px rgb(202, 255, 51);
+    cursor: pointer;
+    border-color: rgb(202, 255, 51);
+    transition: all 0.7s ease 0s;
+}
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(25, 25, 25);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  ::-webkit-scrollbar-thumb {
+    
+    border-radius: 5px;
+  }
+
+
+  /* scrollbar styling ends here */

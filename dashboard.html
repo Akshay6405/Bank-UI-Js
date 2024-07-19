@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboardstyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+  <link rel="shortcut icon" type="image/x-icon" href="images/shape-30.png" />
+  
+</head>
+
+<body>
+  <!-- transfer done popup -->
+  <div class="transfer_done" id="transfer_done">
+    <p id="transfer_content">Transaction successfull! Changes will be reflected shortly.</p>
+    <button onclick="transferdone_close()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x_icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </svg>
+    </button>
+  </div>
+  <!-- transfer done popup ends here -->
+   <!-- mpass change popup -->
+   <div class="mpin_change" id="mpin_change">
+    <p>An MPIN is already set. Do you wish to change?</p>
+    <div class="decision_buttons">
+      <button onclick="mpin_popup_open()">Yes</button>
+      <button onclick="close_mpin_changepopup()">No</button>
+    </div>
+    
+  </div>
+  <!-- mpass change popup -->
+   <!-- card change change popup -->
+   <div class="mpin_change card_change" id="card_change">
+    <p>You have already added a card. Do you wish to change?</p>
+    <div class="decision_buttons">
+      <button onclick=" atm_card_add()">Yes</button>
+      <button onclick="close_card_changepopup()">No</button>
+    </div>
+    
+  </div>
+  <!-- card change popup -->
+  <!-- deposit successfull popup -->
+  <div class="deposit_done" id="deposit_done">
+    <p id="change_popup_content">$ is deposited to your account!</p>
+    <button onclick="deposit_done_popupclose()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x_icon">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </svg>
+    </button>
+  </div>
+  <!-- deposit successfull popup -->
+  <!-- mpin popup -->
+  <div class="mpin_form mpinconfig1" id="mpin_form">
+    <div class="mpin_heading mpinconfig2">
+      Set MPIN:
+    </div>
+    <form class="mpin_fill mpinconfig3">
+      <div class="mpinform_input mpinconfig4">
+        <input type="password" id="epass" placeholder="Enter User Password"/>
+        <input type="password" id="mpinpass" maxlength="4" placeholder="Enter 4 digit MPIN" />
+      
+      </div>
+      <div class="mpinbuttons mpinconfig5">
+        <button onclick="set_mpin()" type="submit">Set Pin</button>
+        <button onclick=" mpin_popup_close()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  <!-- mpin popup ends here -->
+  <!-- deposit popup -->
+  <div class="deposit_form" id="deposit_form">
+    <div class="deposit_heading">
+      Deposit
+    </div>
+    <div class="deposit_fill">
+      <div class="form_input">
+        <input type="number" id="deposit" placeholder="Enter the Amount"/>
+        <input type="password" id="dpass" placeholder="Enter MPIN"/>
+
+      </div>
+      <div class="depositbuttons">
+        <button onclick="depositing_money()"  type="submit">Deposit</button>
+        <button onclick="deposit_popup_close()">Close</button>
+      </div>
+    </div>
+  </div>
+  <!-- deposit popup ends here -->
+  <!-- phone number popup -->
+  <div class="form-container" id="form_container">
+    <div class="logo-container">
+        Add/change Phone number:
+    </div>
+
+    <form class="form">
+      <div class="form-group">
+        <input type="number" id="phonenumber" name="phonenumber" placeholder="Enter your Phone number" maxlength="10">
+      </div>
+<div class="buttonpos">
+      <button class="form-submit-btn" type="submit" onclick=" submitphoneno()">Add/Change</button>
+      <button class="form-submit-btn" onclick="phonepopupclose()" >Close</button></div>
+    </form>
+<!-- phone number popup -->
+  </div>
+  <div class="dashcontainer">
+    <section class="dashcontainer1 ">
+      <div class="sidenavbar">
+        <div class="logo">
+          <img src="Logo.svg" alt="">
+        </div>
+        <div class="config"> <button onclick="decision_mpin()">Set MPIN </button>
+        <button onclick="card_change_decision()">Add Card</button>
+        <button>Investments</button>
+        <button onclick="phonepopup()">Add/Change phone number</button></div>
+      </div>
+      <div class="container02" id="container02">
+        <!-- transfer popup -->
+        <div class="transfer" id="transfer">
+          <div class="tranfer_heading"><h1>Transfer Money:</h1></div>
+          <form class="transfer_form">
+            <div class="t_container1">
+            <label for="transfer_money">Transfer Amount:</label>
+            <input type="number" id="transfer_money"  placeholder="Enter Amount"/>
+          </div>
+            <div class="t_container2">
+            <label for="rec_acc_no" >Recipient's Ac/no. :</label>      
+            <input type="number" id="rec_acc_no"  placeholder="Enter Account Number" autocomplete="off"/> 
+            </div>
+            <div class="t_container3">
+            <label for="cnfr_mpin" >MPIN:</label>
+            <input type="password" id="cnfr_mpin" maxlength="4" placeholder="Enter MPIN" autocomplete="off"/>
+              </div>
+          </form>
+          <div class="tranfer_buttons mpinconfig5">
+            <button onclick=" transfering_money()">Transfer</button>
+            <button onclick="transfer_popup_close()">Close</button>
+          </div>
+        </div>
+        <!-- transfer popup ends here -->
+        <div class="atm_card" id="atm_card">
+          <div class="visa_card_heading"><h1>Enter card details:</h1></div>
+          <div class="visa-card">
+            <div class="logoContainer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="23"
+                height="23"
+                viewBox="0 0 48 48"
+                class="svgLogo"
+              >
+                <path
+                  fill="#ff9800"
+                  d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+                ></path>
+                <path
+                  fill="#d50000"
+                  d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+                ></path>
+                <path
+                  fill="#ff3d00"
+                  d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+                ></path>
+              </svg>
+            </div>
+            <div class="number-container">
+              <label class="input-label" for="cardNumber">CARD NUMBER</label>
+              <input
+                class="inputstyle"
+                id="cardNumber"
+                placeholder="XXXX XXXX XXXX XXXX"
+                name="cardNumber"
+                type="text"
+                autocomplete="off"
+              />
+            </div>
+          
+            <div class="name-date-cvv-container">
+              <div class="name-wrapper">
+                <label class="input-label" for="holderName">CARD HOLDER</label>
+                <input
+                  class="inputstyle"
+                  id="holderName"
+                  placeholder="NAME"
+                  type="text"
+                  autocomplete="off"
+                />
+              </div>
+          
+              <div class="expiry-wrapper">
+                <label class="input-label" for="expiry">VALID THRU</label>
+                <input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" autocomplete="off"/>
+              </div>
+              <div class="cvv-wrapper">
+                <label class="input-label" for="cvv">CVV</label>
+                <input
+                  class="inputstyle"
+                  placeholder="***"
+                  maxlength="3"
+                  id="cvv"
+                  type="password"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="atm_card_buttons">
+            <button onclick="submit_card_details()">Add</button>
+            <button onclick="atm_card_close()">Close</button>
+          </div>
+          
+
+
+        </div>
+        <!-- atm card popup ends here -->
+
+
+
+        <div class="topcontent">
+          <div class="topnav">
+            <div class="welcome">
+              <h2>Welcome </h2>
+              <span id="chguser">Username</span>
+            </div>
+
+            <div class="paste-button">
+              <button class="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke-width="1.5" stroke="currentColor" class="usericon">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+              </button>
+              <div class="dropdown-content">
+                <a id="top" href="#">Help</a>
+                <a id="middle" href="#">security</a>
+                <a id="bottom" href="#" onclick="logout()">Log out</a>
+              </div>
+            </div>
+          </div>
+          <div class="balance">
+            <div class="balancecontainer">
+              <p>Available Balance:</p>
+              <br>
+              <h1 id="chgbalance">$0.0</h1>
+              <div class="actions">
+                <button id="depositbtn" onclick="deposit_popup_open()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="depositicon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
+                  </svg>
+                  Deposit</button>
+                <button id="investbtn" onclick="transfer_popup_open()"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="investicon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  Transfer</button>
+                  <button id="insurancebtn"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="insuranceicon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                  </svg>
+                  Insurance</button>
+
+              </div>
+            </div>
+
+            <div class="insights">
+              <!-- account details pop up -->
+              <div class="detailspopup" id="detailspopup">
+                <table class="detailstable">
+                  <tr>
+                    <th><h2>User details:<h2</th>
+                  </tr>
+                  <tr>
+                    <td>First name</td>
+                    <td id="first_name"></td>
+                  </tr>
+                  <tr>
+                    <td>Last name</td>
+                    <td id="last_name"></td>
+                  </tr>
+                  <tr>
+                    <td>Account number</td>
+                    <td id="accno"></td>
+                  </tr>
+                  <tr>
+                    <td>Mail ID</td>
+                    <td id="mailid"></td>
+                  </tr>
+                  <tr>
+                    <td>Phone number</td>
+                    <td id="phno"></td>
+                  </tr>
+                  
+                </table>
+
+              </div>
+              <!-- account details pop up -->
+
+              
+
+          </div>
+        </div>
+        <div class="bottom">
+        <div class="secure">
+         
+          <div class="loader">
+            <span></span>
+        </div>
+        <p>Powered by YourSecure</p>
+        </div>
+        <div class="progress">
+          <div class="progress_content1">
+          <div class="progress_heading">Money spend limit:</div>
+          <div class="progress_input">
+           <input type="number" id="money_limit" placeholder="Enter limit Amount"/>
+           <button>Set</button>
+           <button>Clear</button>
+          </div>
+          <div class="progress_bar_container">
+            <div class="card1">
+   
+              <div class="card__progress"><progress max="100" value="30"></progress></div>
+            </div>
+            </div>
+            
+          </div>
+          <div class="card_wallet">
+            <div class="container">
+              <div class="box">
+                <span class="title">My Card</span>
+                <div>
+                  <strong id="display_holdername">Name</strong>
+                  <p id="display_cardno"></p>
+                  <span>VALID</span> <span id="display_date">mm/yy</span>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="footer">
+    <div class="footercontainer1">
+        <div class="footerlogo"><img id="footerlogoin" src="images/footerlogo.svg"></div>
+        <div class="footernav"> 
+            <a href="index.html">Home</a>
+            <a href="">Careers</a>
+            <a href="">About</a>
+            <a href="">Security</a>
+        </div>
+    </div>
+    <div class="footercontainer2">
+        <a href="mailto:hello@skillbridge.com"><button id="btnconfig"><img src="icons/maillicon.svg">hello@skillbridge.com</button></a>
+        <a href="tel:+91 7034 78 6969"><button id="btnconfig"><img src="icons/phoneicon.svg"> +91 7034 78 6969</button></a>
+        <a href="https://www.google.com/maps/place/Amsterdam,+Netherlands/@52.3542071,4.5743283,10z/data=!3m1!4b1!4m6!3m5!1s0x47c63fb5949a7755:0x6600fd4cb7c0af8d!8m2!3d52.3675734!4d4.9041389!16zL20vMGszcA?entry=ttu" target="_blank"><button id="btnconfig"><img src="icons/mapicon.svg">Somewhere in the World</button></a>
+    </div>
+    <div class="footercontainer3">
+        <div class="socialicons">
+            <button><img src="icons/footerfbicon.svg"></button>
+            <button><img src="icons/footertwticon.svg"></button>
+            <button><img src="icons/footerldnicon.svg"></button>
+        </div>
+        <div class="rights">
+            YourBanK all Rights Reserved
+         </div>
+         <div class="policy">
+            <div class="privacy">Privacy Policy</div>
+            <div class="terms">Terms of Service</div>
+         </div>
+    </div>
+  </section>
+  <script src="Javascript/script.js"></script>
+  <script src="Javascript/dash.js"></script>
+</body>
+
+</html>

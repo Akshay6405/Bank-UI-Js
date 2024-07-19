@@ -1,0 +1,1254 @@
+*{
+    margin: 0;
+    padding:0 ;
+    background-color: rgb(25,25,25);
+    font-family: 'lexend';
+}
+
+
+.dashcontainer{
+    background-color: transparent;
+    height: 125vh;
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3.5rem;
+    
+}
+
+.dashcontainer1{
+    background-color:#1C1C1C;
+    width:auto ;
+    border-radius: 2rem;
+    height: 88vh;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #262626;
+    display: flex;
+    gap: 1rem;
+    box-shadow: 0 3px 10px rgb(  25 25 25 /0.1);
+}
+
+.sidenavbar{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #262626;
+    height: 87.7vh;
+    width: 15rem;
+    background-color: rgb(25,25,25);
+    border-radius: 2rem 0rem 0rem 2rem;
+
+}
+
+.logo{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    text-align: center;
+}
+
+.config button{
+    color:#c5c5c5;
+    background-color: transparent;
+    width:100%;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.config{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.config button:hover{
+ color: rgb(202,255,51);
+ transition: all 0.4s ease 0s;
+ cursor: pointer;
+}
+
+
+.container02{
+    height: 85vh;
+    width: auto;
+    background-color: #1C1C1C;
+}
+
+/* profile button */
+.paste-button {
+    position: relative;
+    display: block;
+    font-family: 'lexend';
+  }
+  
+  .button {
+    background-color:transparent;
+    color: #212121;
+    padding: 10px 15px;
+    
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    min-width: 6rem;
+    background-color: #1C1C1C;
+    border: 1px solid #262626;
+    border-radius: 0px 15px 15px 15px;
+   
+  }
+  
+  .dropdown-content a {
+    color: #c5c5c5;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+    border-radius: 1rem;
+    background-color: #1C1C1C;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(202,255,51);
+    color: #212121;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #212121;
+    color: #4CAF50;
+  }
+  
+  .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+  }
+  
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+  
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+
+  /* ends here */
+
+  .topnav{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: rgb(25,25,25);
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#262626;
+    width: 64rem;
+    height: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+  }
+
+  .topcontent{
+    background-color: transparent;
+    width: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 2rem;
+  }
+
+  .topnav h2{
+    color:rgb(202,255,51) ;
+  }
+
+  .balance{
+    display: flex;
+    gap: 2rem;
+    background-color: #1C1C1C;
+  }
+
+ /* styling of buttons inside the balance container */
+#depositbtn , #investbtn, #insurancebtn{
+  width: 5.9rem;
+  height: 7.5rem;
+  color: #c5c5c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+}
+#depositbtn:hover , #investbtn:hover, #insurancebtn:hover{
+  color: rgb(202,255,51);
+  cursor: pointer;
+}
+.investicon , .depositicon , .insuranceicon{
+  width: 2.5rem;
+  height: 2.5rem;
+
+} 
+
+.actions{
+  display: flex;
+  gap: 1rem;
+}
+
+ /* styling of buttons inside the balance container ends here*/
+
+
+
+  .balancecontainer{
+    width: auto;  
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .balancecontainer , .insights{
+    border-radius: 1.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#262626;
+  }
+  .insights{
+    width: 35.7rem;
+    padding: 2rem;
+   
+  }
+.balancecontainer h1{
+color: rgb(202,255,51);
+}
+  .balancecontainer p, .insights p{
+    color: #c5c5c5
+  }
+
+ .container02{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ } 
+ .bottom p{
+    color: #c5c5c5;
+    
+ }
+ .bottom{
+   background-color: transparent;
+ }
+
+ .usericon{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: transparent;
+  color: #c5c5c5;
+ }
+
+.welcome{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.welcome span{
+  color: #c5c5c5;
+  font-size: 1.5rem;
+}
+
+
+
+/* scrollbar styling */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(25, 25, 25);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #262626;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+::-webkit-scrollbar-thumb {
+  
+  border-radius: 5px;
+}
+
+
+/* scrollbar styling ends here */
+
+#capt{
+  color: #c5c5c5 ;
+}
+
+#mychart tbody tr th {
+ color: #c5c5c5;
+ font-size: 0.8rem;
+}
+#mychart tbody tr td{
+  color: #c5c5c5;
+  font-size: 0.7rem;
+}
+
+#mychart .line{
+  --color: rgb(202,255,51);
+  --primary-axis-color:#262626;
+  --data-axes-color:#262626 ;
+}
+
+/* footer styling starts here */
+.footer{
+  width: 100%;
+  height: 65vh;
+  background-color: #1C1C1C;
+}
+
+#footerlogoin{
+  background-color: #1C1C1C;
+}
+.footerlogo{
+  background-color: #1C1C1C;
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 4rem; */
+}
+
+.footercontainer1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1C1C1C;
+  height: 6rem;
+  justify-content: space-between;
+  padding-top: 4rem;
+  
+}
+
+.footernav a{
+  text-decoration: none;
+  font-family: 'lexend';
+  color: #c5c5c5; 
+  background-color: #1C1C1C;
+  font-size: 1rem;
+}
+
+
+.footernav{
+  display: flex;
+  gap: 1.5rem;
+  background-color: #1C1C1C;
+  
+  /* padding-top: 3rem; */
+}
+
+.footercontainer2{
+  background: transparent;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2.5rem;
+  width: 75rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #262626;
+}
+
+.footercontainer2 button{
+  border: none;
+  background: transparent;
+  font-family: 'lexend';
+  color: #c5c5c5;
+  font-size: 1.1rem;
+  justify-items: center;
+  
+}
+
+#btnconfig{
+  display: flex;
+  align-items: center;
+  
+
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.socialicons{
+  display: flex;
+  gap: 1rem;
+  background: transparent;
+}
+
+.socialicons button{
+  background: transparent;
+  border: none;
+}
+
+.socialicons img{
+  background: transparent;
+}
+
+.policy{
+  display: flex;
+  align-items: center;
+}
+
+.rights{
+display: flex;
+align-items: center;
+}
+
+.rights , .policy{
+  color: #B3B3B3;
+  font-family: 'lexend';
+  font-size: 1rem;
+  background: transparent;
+}
+.footercontainer3{
+  display:flex;
+  width: 75rem;
+  background-color: #1A1A1A;
+  justify-content: space-between;
+  height: 4.4rem;
+  border: 1px solid;
+  border-color: #262626;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 2.5rem;
+}
+
+.privacy{
+  border-right: 2px solid;
+  border-color: #333333;
+}
+
+.privacy , .terms{
+  background-color: #1A1A1A;
+  height: 1.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.footercontainer2 a{
+  background: transparent;
+  text-decoration: none;
+}
+/* hover actions */
+.privacy:hover ,
+.privacy:active ,
+.terms:hover,
+.terms:active{
+  color: rgb(202,255,51);
+  transition: all 0.7s ease 0s;
+  cursor: pointer;
+}
+
+#btnconfig:hover , #btnconfig:active{
+  color: rgb(202,255,51);
+  cursor: pointer;
+  transition: all 0.7s ease 0s;
+}
+
+.footernav a:hover , .footernav a:active {
+  color: rgb(202,255,51);
+  transition: all 0.7s ease 0s;
+}
+
+.socialicons button:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.7s ease 0s;
+}
+
+
+/* footer styling ends here */
+
+
+
+/* details popup 1  */
+.detailspopup{
+  background-color:  transparent;
+  width:auto;
+  height: 14rem;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.closedetailspopup{
+  visibility: hidden;
+}
+
+.detailstable td{
+  padding-right: 3rem;
+  color: #c5c5c5;
+}
+
+
+.detailspopup h2{
+  color: rgb(202,255,51);
+  background-color: transparent;
+
+}
+
+/* details popup 1  */
+
+/* phone number pop up */
+.form-container {
+  width: 450px;
+  height: 15rem;
+  background-color: #191919;
+  padding:2rem;
+  font-size: 14px;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  left: 56%;
+  top: 26%;
+  transform: scale(0.1);
+  transition: transform 0.4s;
+  visibility: hidden;
+}
+
+.openpopup4{
+  transform: scale(1.1);
+  visibility: visible;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .logo-container {
+  text-align: center;
+  background-color: transparent;
+  font-weight: 600;
+  color: #CAFF33;
+  font-size: 18px;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+
+
+.form-container .form-group input {
+  width: auto;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  color: #c5c5c5;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #1778f2;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  color: black;
+  background-color: #CAFF33;
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: inherit;
+  gap: 8px;
+  margin: 12px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+
+.buttonpos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: whitesmoke;
+}
+
+.form-container .link {
+  color: #1778f2;
+  text-decoration: none;
+}
+
+.form-container .signup-link {
+  align-self: center;
+  font-weight: 500;
+}
+
+
+
+/* phone number pop up */
+
+/* deposit popup designing */
+.form_input, .mpinconfig4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.deposit_form , .mpinconfig1{
+  width: 30rem;
+  background-color: black;
+  height: 14rem;
+  position: absolute;
+  left: 54%;
+  top: 26%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 1.3rem;
+  transform: scale(0.1);
+  transition: transform 0.4s;
+  visibility: hidden;
+}
+.depositpopupopen{
+  transform: scale(1.1);
+  visibility: visible;
+}
+.deposit_heading , .mpinconfig2{
+  color: rgb(202,255,51);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.form_input input , .mpinconfig4 input{
+  width: 17rem;
+  height: 2.4rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #B3B3B3;
+  border-radius: 1rem;
+  color: #c5c5c5;
+  padding-left: 1rem;
+}
+
+.form_input input::placeholder , .mpinconfig4 input::placeholder{
+  padding-left: 1rem;
+}
+
+.depositbuttons, .mpinconfig5 , .atm_card_buttons{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: transparent;
+}
+.depositbuttons button , .mpinconfig5 button , .atm_card_buttons button{
+  width: 7rem;
+  height: 2.8rem;
+  border-radius: 1.5rem;
+  background-color: rgb(202,255,51);
+  border: none;
+}
+.deposit_fill , .mpinconfig3{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.depositbuttons button:hover , .mpinconfig5 button:hover , .atm_card_buttons button:hover{
+  cursor: pointer;
+  background-color: aliceblue;
+  border: solid;
+  border-width: 1px;
+  border-color: rgb(202,255,51);
+  transition: all 0.4s ease 0s;
+}
+
+/* deposit popup designing ends here */
+.hidecontent{
+  visibility: hidden;
+}
+
+/* -----------------------------------------------------deposit done popup---------------------------------------------------  */
+/* close icon styling */
+.x_icon{
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: transparent;
+}
+/* popup content styling */
+.deposit_done p ,.transfer_done p{
+  background-color: transparent;
+}
+
+.deposit_done button , .transfer_done button{
+  background-color: rgb(202,255,51);
+  border: none;
+  cursor: pointer;
+ 
+}
+/* popup div styling */
+.deposit_done , .transfer_done {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  background-color: rgb(202,255,51);
+  display: flex;
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+  width: 25rem;
+  padding: 1rem;
+  justify-content: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.openingpopup{
+  visibility: visible;
+  position: fixed;
+  top: 5%;
+  
+}
+/* -------------------------------------------------------------deposit done popup ---------------------------------------------- */
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* mpin change popup */
+.mpin_change{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  background-color: rgb(202,255,51);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  width: 25rem;
+  padding: 1rem;
+  justify-content: center;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.decision_buttons{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+}
+.mpin_change p , .decision_buttons button{
+  background-color: transparent;
+  border: none;
+}
+.decision_buttons button{
+  font-size: 1rem;
+  cursor: pointer;
+}
+.openingpopupmpin{
+  visibility: visible;
+  position: fixed;
+  top: 5%;
+  
+}
+/* mpin change popup ends here */
+/* transfer popup styling starts here */
+.transfer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: transparent;
+  top: 28%;
+  left: 47%;
+  transform: scale(0.1);
+  transition: transform 0.4s;
+  visibility: hidden;
+}
+
+.transfer_form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: transparent;
+}
+
+.t_container1 , .t_container2 , .t_container3{
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  gap: 0.3rem;
+  background-color: transparent;
+}
+
+.transfer input{
+  width: 17rem;
+  height: 2.4rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #B3B3B3;
+  border-radius: 1rem;
+  color: #c5c5c5;
+  padding-left: 1rem;
+
+
+}
+.transfer label{
+  color: #c5c5c5;
+  background-color: transparent;
+}
+.tranfer_heading{
+  display: flex;
+  justify-content: center;
+  color: rgb(202,255,51);
+  background-color: transparent;
+}
+.tranfer_heading h1{
+  background-color: transparent;
+}
+
+
+.tranfer_buttons{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: transparent;
+}
+.open_transfer{
+  transform: scale(1.1);
+  visibility: visible;
+}
+.hiderightcontent{
+  visibility: hidden;
+}
+/* transfer popup styling ends here */
+.opening_transferdone{
+  visibility: visible;
+  position: fixed;
+  top: 5%;
+  
+}
+
+/* 
+animated loader */
+
+.loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border-radius: 50%;
+  /* box-shadow: 25px 25px 75px rgba(0,0,0,0.55); */
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  background: transparent;
+  border: 1px dashed#444;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+  inset 5px 5px 35px rgba(0,0,0,0.25);
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px dashed#444;
+  box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+  inset 5px 5px 35px rgba(0,0,0,0.25);
+}
+
+.loader span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  transform-origin: top left;
+  animation: radar81 2s linear infinite;
+  border-top: 1px dashed #fff;
+}
+
+.loader span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: seagreen;
+  transform-origin: top left;
+  transform: rotate(-55deg);
+  filter: blur(30px) drop-shadow(20px 20px 20px seagreen);
+}
+
+@keyframes radar81 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.secure {
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 15rem;
+  height: 11rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#262626;
+}
+
+
+.progress{
+  width: 45rem;
+  height: 11rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#262626;
+}
+
+.bottom{
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* atm card styling */
+.atm_card{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: transparent;
+  top: 28%;
+  left: 20%;
+  transition: transform 0.4s , left 0.4s;
+  visibility: hidden;
+  
+}
+.atm_card_open{
+  visibility: visible;
+  left: 45%;
+}
+
+
+
+.visa-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: transparent;
+  width: 300px;
+  height: 180px;
+  background-image: radial-gradient(
+    circle 897px at 9% 80.3%,
+    rgba(55, 60, 245, 1) 0%,
+    rgba(234, 161, 15, 0.9) 100.2%
+  );
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  gap: 15px;
+}
+.logoContainer {
+  width: 18.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: fit-content;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 18px;
+}
+.svgLogo {
+  height: 40px;
+  width: auto;
+  background-color: transparent;
+}
+.inputstyle::placeholder {
+  color: #262626;
+}
+.inputstyle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  caret-color: red;
+  font-size: 13px;
+  height: 25px;
+  letter-spacing: 1.5px;
+}
+.number-container {
+  width: 100%;
+  height: fit-content;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+#cardNumber {
+  width: 100%;
+  background-color: transparent;
+  height: 25px;
+}
+.name-date-cvv-container {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  gap: 10px;
+  background-color: transparent;
+}
+.name-wrapper {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.expiry-wrapper,
+.cvv-wrapper {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.cvv-wrapper {
+  width: 10%;
+}
+#expiry,
+#cvv {
+  width: 100%;
+}
+.input-label {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #e2e2e2;
+  width: 100%;
+  background-color: transparent;
+}
+.visa_card_heading{
+  background-color: transparent;
+}
+.visa_card_heading h1{
+  background-color: transparent;
+  color: rgb(202,255,51);
+}
+
+/* 
+progress bar styling and settings */
+
+
+.card1 {
+  --main-color: rgb(202,255,51);
+  --bg-color: #1C1C1C;
+  width: 400px;
+  padding: 25px;
+  background: var(--bg-color);
+  border-radius: 20px;
+  border-style: solid 1px;
+  border-color: #262626;
+}
+.card__progress{
+  background-color: transparent;
+}
+.card__progress progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 100px;
+  background-color: transparent;
+}
+
+.card__progress progress::-webkit-progress-bar {
+  background-color: #00000030;
+  border-radius: 100px;
+}
+
+.card__progress progress::-webkit-progress-value {
+  background-color: var(--main-color);
+  border-radius: 100px;
+}
+
+.progress_content1{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 1rem;
+}
+.progress_heading{
+  color: rgb(202,255,51);
+}
+
+.progress_input input{
+  height: 2rem;
+  width: 15rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width:1px ;
+  border-color: #262626;
+  background-color: transparent;
+  color: #c5c5c5;
+  padding-left: 1rem;
+}
+
+.progress_input{
+  display: flex;
+  gap: 1rem;
+}
+
+.progress_input button{
+  width: 5rem;
+  height: 2.2rem;
+  background-color: rgb(202,255,51);
+  border: none;
+  border-radius: 1rem;
+}
+.progress_input button:hover{
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+.progress{
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+
+.container {
+  color: white;
+  font-family: sans-serif;
+}
+
+
+.container .box {
+  width: 11.875em;
+  height: 8.875em;
+  padding: 1rem;
+  background-color: #1C1C1C;
+  border: 1px solid #262626;
+  border-radius: 0.7rem;
+}
+
+.container .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .box .title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+}
+.container .box div{
+  background-color: transparent;
+}
+
+.container .box div strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  background-color: transparent;
+}
+
+.container .box div p {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+}
+
+.container .box div span {
+  font-size: 0.7rem;
+  font-weight: 300;
+  background-color: transparent;
+}
+
+.container .box div span:nth-child(3) {
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+

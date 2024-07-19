@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourBank Login</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/x-icon" href="images/shape-30.png" />
+</head>
+<body>
+    <div class="backbutton">
+    <a href="index.html"><button class="btn"> Go Back
+    </button></a>
+    </div>
+    <div class="logincontent">
+       
+
+        <div class="loginmenu">
+
+        <!-- pop up starts here -->
+        <!-- popup 1 -->
+        <div class="popup" id="popup">
+            <h2>Thank You!</h2>
+            <p>We're excited to have you onboard. Click on continue to proceed to login page.  </p>
+            <button onclick="closepopup()">CONTINUE</button>
+        </div>
+        <!-- pop up 1 ends here -->
+        <!-- popup 2 -->
+        <div class="popup2" id="popup2">
+            <h2>Oops!</h2>
+            <p>All fields are required. Or you may have made a mistake filling it out, Please check again.  </p>
+            <button onclick="closepopup2()">OK</button>
+        </div>
+        <!-- popup 2 ends here -->
+        <!-- pop up ends here -->
+
+            <div class="loginheader">
+                <div class="loghead"><span id="header">Sign Up</span></div>
+                <div class="desc"><span id="description">Join our community today! Create an account to unlock exclusive features and personalized experiences.</span></div>
+            </div>
+            <div class="userinput">
+               <div class="inputcontainer1"> <input class="userinputconfig" id="FirstName" type="text" placeholder="Enter First Name" required>
+                <input class="userinputconfig" id="LastName" type="text" placeholder="Enter Last Name" required>
+                </div>
+                <div class="inputcontainer2">
+                    <input class="userinputconfig" id="email" type="email" placeholder="Enter your Email" required>
+                    <input class="userinputconfig" id="pass" type="password" placeholder="Enter your Password" required minlength="8" maxlength="14">  
+                </div>
+            </div>
+            <div class="forgotpass">
+                <a href="" id="fpass">Forgot Password?</a>
+            </div>
+            <div class="herocontent">
+                <div>
+                    <button class="button2" onclick="loginredirect()">Login</button>
+               </div>
+                <div>
+                    <button class="button" onclick="signup()">
+                        <span class="button-content">Sign Up </span>
+                      </button>
+                </div>
+                <div class="continue">
+                    <div class="msg">Or Continue with</div>
+                    <div class="socials">
+                        <div class="google"><button class="btnconfig"><img src="icons/googleicon.svg"></button></div>
+                        <div class="facebook"><button class="btnconfig"><img  src="icons/facebookicon.svg"></button></div>
+                        <div class="apple"><button class="btnconfig"><img  src="icons/appleicon.svg"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="footercontainer1">
+            <div class="footerlogo"><img id="footerlogoin" src="images/footerlogo.svg"></div>
+            <div class="footernav"> 
+                <a href="index.html">Home</a>
+                <a href="">Careers</a>
+                <a href="">About</a>
+                <a href="">Security</a>
+            </div>
+        </div>
+        <div class="footercontainer2">
+            <a href="mailto:hello@skillbridge.com"><button id="btnconfig"><img src="icons/maillicon.svg">hello@skillbridge.com</button></a>
+            <button id="btnconfig"><img src="icons/phoneicon.svg"> +91 7034 78 6969</button>
+            <a href="https://www.google.com/maps/place/Amsterdam,+Netherlands/@52.3542071,4.5743283,10z/data=!3m1!4b1!4m6!3m5!1s0x47c63fb5949a7755:0x6600fd4cb7c0af8d!8m2!3d52.3675734!4d4.9041389!16zL20vMGszcA?entry=ttu" target="_blank"><button id="btnconfig"><img src="icons/mapicon.svg">Somewhere in the World</button></a>
+        </div>
+        <div class="footercontainer3">
+            <div class="socialicons">
+                <button><img src="icons/footerfbicon.svg"></button>
+                <button><img src="icons/footertwticon.svg"></button>
+                <button><img src="icons/footerldnicon.svg"></button>
+            </div>
+            <div class="rights">
+                YourBanK all Rights Reserved
+             </div>
+             <div class="policy">
+                <div class="privacy">Privacy Policy</div>
+                <div class="terms">Terms of Service</div>
+             </div>
+        </div>
+    </section>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
